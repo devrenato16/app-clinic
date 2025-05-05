@@ -1,9 +1,17 @@
-import {View, Text, StyleSheet} from "react-native"
+import {View, Text, StyleSheet, Alert, Button} from "react-native"
 
 export default function Index (){
+    function handleMessage(){
+        const name = "Renas"
+        Alert.alert(`Olá, ${name}`)
+        
+    }
+
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>Olá, Renato!</Text>
+            <Text style={styles.title}>Olá, Renato B!</Text>
+
+            <Button title="Enviar" onPress={handleMessage} />
         </View>
         
     )
